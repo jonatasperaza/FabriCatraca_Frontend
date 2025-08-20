@@ -1,6 +1,4 @@
-import api from "@/plugins/api";
-api.baseURL = api.baseURL + "/users";
-
+import { usersApi as api } from '@/plugins/api'
 
 class UsersService {
   async getUsers(params) {

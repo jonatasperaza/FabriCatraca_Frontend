@@ -1,6 +1,4 @@
-import api from "@/plugins/api";
-api.baseURL = api.baseURL + "/control_id";
-
+import { controlIdApi as api } from '@/plugins/api'
 
 class UserAccessRulesService {
   async getUserAccessRules(params) {
@@ -47,7 +45,7 @@ class UserAccessRulesService {
       console.error(error);
       throw error;
     }
-  } 
+  }
 }
 
 export default new UserAccessRulesService();
