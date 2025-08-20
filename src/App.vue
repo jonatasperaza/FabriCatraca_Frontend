@@ -1,7 +1,13 @@
 <script setup></script>
 
 <template>
-  <RouterView />
+  <body>
+    <RouterView />
+  </body>
 </template>
 
-<style scoped></style>
+<style>
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+</style>

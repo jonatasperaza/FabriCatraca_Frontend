@@ -4,6 +4,7 @@ import { useAuth } from './auth'
 import { useAccessRules } from './access_rules'
 import { useAccessRuleTimeZones } from './access_rule_time_zones'
 import { useAreas } from './areas'
+import { useBio } from './bio'
 import { useCards } from './cards'
 import { useDevice } from './device'
 import { useGroups } from './groups'
@@ -21,6 +22,7 @@ export {
   useAccessRules,
   useAccessRuleTimeZones,
   useAreas,
+  useBio,
   useCards,
   useDevice,
   useGroups,

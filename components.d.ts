@@ -8,7 +8,18 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AccessChart: typeof import('./src/components/AccessChart.vue')['default']
+    AcessosHoje: typeof import('./src/components/global.vue/CardGlobal.vue')['default']
+    ActinoButtons: typeof import('./src/components/global.vue/ActinoButtons.vue')['default']
+    AlunoAtivos: typeof import('./src/components/AlunoAtivos.vue')['default']
+    Card: typeof import('./src/components/global.vue/card.vueue/card.vue')['default']
+    CardGlobal: typeof import('./src/components/global.vue/CardGlobal.vue')['default']
+    DashboardComponent: typeof import('./src/components/DashboardComponent.vue')['default']
+    HeaderVue: typeof import('./src/components/HeaderVue.vue')['default']
+    QuickActions: typeof import('./src/components/QuickActions.vue')['default']
+    RecentAccess: typeof import('./src/components/RecentAccess.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TurnstileStatus: typeof import('./src/components/TurnstileStatus.vue')['default']
   }
 }
