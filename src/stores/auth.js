@@ -29,25 +29,9 @@ export const useAuth = defineStore("user", () => {
     state.value.isLogged = true;
   }
 
-  const getUsers = async () => {
-    const users = await UsersService.getUsers();
-    return users;
-  }
-
-  const getUser = async () => {
-    const user = await UsersService.getUserById(state.value.user.id);
+  const getMe = async () => {
+    const user = await UsersService.getMe();
     return user;
-  }
-  const deleteUser = async () => {
-    await UsersService.deleteUser(state.value.user.id);
-  }
-
-  const createUser = async (user) => {
-    await UsersService.createUser(user);
-  }
-
-  const updateUser = async (user) => {
-    await UsersService.updateUser(user);
   }
 
   const logout = async () => {
@@ -61,7 +45,7 @@ export const useAuth = defineStore("user", () => {
     };
   }
 
-  return { state, isLogged, user, token, refresh, getUser, deleteUser, login, logout, createUser, updateUser, getUsers };
+  return { state, isLogged, user, token, refresh, getMe, login, logout };
 });
 
 

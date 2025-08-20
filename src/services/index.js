@@ -1,4 +1,3 @@
-import AresService from "./ares";
 import AccessRulesService from "./access_rules";
 import AccessRuleTimeZonesService from "./access_rule_time_zones";
 import AreasService from "./areas";
@@ -15,4 +14,4 @@ import UserAccessRulesService from "./user_access_rules";
 import UserGroupsService from "./user_groups";
 import UsersService from "./users";
 
-export { AresService, AccessRulesService, AccessRuleTimeZonesService, AreasService, CardsService, ConfigService, DeviceService, GroupAccessRulesService, GroupsService, PortalAccessRulesService, PortalsService, TimeSpansService, TimeZonesService, UserAccessRulesService, UserGroupsService, UsersService };
+  export { AreasService, AccessRulesService, AccessRuleTimeZonesService, CardsService, ConfigService, DeviceService, GroupAccessRulesService, GroupsService, PortalAccessRulesService, PortalsService, TimeSpansService, TimeZonesService, UserAccessRulesService, UserGroupsService, UsersService };

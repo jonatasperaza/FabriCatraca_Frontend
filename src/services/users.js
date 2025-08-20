@@ -48,6 +48,15 @@ class UsersService {
       throw error;
     }
   }
+  async getMe() {
+    try {
+      const response = await api.get("/users/me");
+      return response.data;
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
 }
 
 export default new UsersService();
