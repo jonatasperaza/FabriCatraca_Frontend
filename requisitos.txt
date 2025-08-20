@@ -46,7 +46,9 @@ Requisitos Não Funcionais (RNF)
 Sistema de Controle de Acesso Escolar  Requisitos 2
 
 
-    	     Backup e Resiliência 
+
+
+                 Backup e Resiliência 
 Backup automático diário dos dados críticos 
 Armazenamento criptografado do histórico de acessos 
 Redundância de dados para prevenir perda de informações 
@@ -71,6 +73,8 @@ Segurança e Conformidade
 Sistema de Controle de Acesso Escolar  Requisitos 3
 
 
+
+
                                 Criptografia AES-256 para dados sensíveis 
 Comunicação HTTPS/TLS 1.3 obrigatória 
 Logs de auditoria invioláveis 
@@ -93,8 +97,13 @@ regras
         
            RN008: Aluno inativo não pode acessar o sistema 
 
+
 RN009: Máximo de 3 tentativas de acesso em sequência (anti-tailgating) 
 Sistema de Controle de Acesso Escolar  Requisitos 4
+
+
+
+
 
 
 
@@ -120,7 +129,10 @@ RN022: Novas catracas podem ser adicionadas sem interrupção do serviço
 RN023: Integração com novos sistemas deve ser possível via API 
 padronizada 
 
+
 Sistema de Controle de Acesso Escolar  Requisitos 5
+
+
 
 
 Critérios de Aceitação 
@@ -136,5 +148,6 @@ Usabilidade
 ✅ Taxa de erro de usuário ≤ 2% 
 ✅ Satisfação do usuário ≥ 8/10 
 ✅ Suporte técnico resolvendo 90% dos chamados em até 4 horas 
+
 
 Sistema de Controle de Acesso Escolar  Requisitos 6
